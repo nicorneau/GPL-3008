@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="mean concave points <= 0.0645\ngini = 0.4675\nsamples = 569\nvalue = [212, 357]"] ;
+1 [label="mean area <= 0.1176\ngini = 0.108\nsamples = 349\nvalue = [20, 329]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="mean concave points <= -0.1088\ngini = 0.0529\nsamples = 331\nvalue = [9, 322]"] ;
+1 -> 2 ;
+3 [label="gini = 0.0312\nsamples = 315\nvalue = [5, 310]"] ;
+2 -> 3 ;
+4 [label="gini = 0.375\nsamples = 16\nvalue = [4, 12]"] ;
+2 -> 4 ;
+5 [label="mean texture <= 0.0303\ngini = 0.4753\nsamples = 18\nvalue = [11, 7]"] ;
+1 -> 5 ;
+6 [label="gini = 0.4444\nsamples = 9\nvalue = [3, 6]"] ;
+5 -> 6 ;
+7 [label="gini = 0.1975\nsamples = 9\nvalue = [8, 1]"] ;
+5 -> 7 ;
+8 [label="mean texture <= -0.6736\ngini = 0.2221\nsamples = 220\nvalue = [192, 28]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="mean concave points <= 0.7772\ngini = 0.477\nsamples = 28\nvalue = [11, 17]"] ;
+8 -> 9 ;
+10 [label="gini = 0.1107\nsamples = 17\nvalue = [1, 16]"] ;
+9 -> 10 ;
+11 [label="gini = 0.1653\nsamples = 11\nvalue = [10, 1]"] ;
+9 -> 11 ;
+12 [label="mean perimeter <= -0.2798\ngini = 0.108\nsamples = 192\nvalue = [181, 11]"] ;
+8 -> 12 ;
+13 [label="gini = 0.5\nsamples = 14\nvalue = [7, 7]"] ;
+12 -> 13 ;
+14 [label="gini = 0.0439\nsamples = 178\nvalue = [174, 4]"] ;
+12 -> 14 ;
+}
